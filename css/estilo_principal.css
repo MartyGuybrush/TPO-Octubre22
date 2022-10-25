@@ -8,31 +8,74 @@
   color: #222121;
 }
 
+
 h2{
   font-family: Poppins;
   letter-spacing: 1px;
   font-size: 2.3rem;
-
-
 }
+
 h3{
   font-family: Poppins;
   letter-spacing: 1px;
   font-size: 1.8rem;
-
-
 }
 
 p{
   font-family: Poppins;
   font-weight: 300;
-
-
 }
 
 li{
   font-family: Poppins;
   font-weight: 350;
+}
+
+
+a{
+  font-family: Poppins;
+}
+
+/* ESTILO HEADER */
+.header {
+  position: sticky;
+  height: 40px;
+  z-index: 200;
+  top: 0px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .header-logo {
+  height: 100%;
+  
+}
+
+.header #navbar {
+  display: flex;
+  gap: 10px;
+  
+}
+
+.header #navbar div {
+  padding: 10px 25px;
+  cursor: pointer;
+  
+}
+.header #navbar div:hover {
+  background-color: #bf3030;
+  color: white;
+  border-radius: 8px;
+  
+}
+
+.header #navbar div:hover a {
+  color: white;
+}
+.header #navbar div a {
+  text-decoration: none;
+  font-weight: bold;
 
 
 }
@@ -43,9 +86,7 @@ li{
   margin: 20px auto;
   display: grid;
   grid-gap: 20px;
- /* grid-template-columns: repeat(3, 1f);
-  grid-template-areas: "header header header"
-                        "nosotros nosotros nosotros";*/
+
 
 }
 
@@ -63,8 +104,9 @@ height: 100%;
   background-size: cover;
   background-position: center;
   transition: all 1.s ease-in-out;
+  
   background-image:url('../imagenes/banner1.jpg');
-  animation: banner 15s infinite linear;
+  animation: ani-banner 15s infinite linear;
 }
 
 .banner-fondo{
@@ -109,9 +151,10 @@ span h3{
 
 /* ANIMACIÓN BANNER */
 
-@keyframes banner{
+@keyframes ani-banner{
   0%, 33%{ 
     background-image: url('../imagenes/banner1.jpg');
+    
   }
   
   34%, 66%{ 
@@ -297,8 +340,7 @@ i{
 .elegirnos{
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 
 }
 
@@ -320,12 +362,12 @@ i{
   }
   
   .banner-texto h2{
-    font-size: 1.5rem;    
+    font-size: 1.7rem;    
   
   }
   
   .banner-texto h3{
-    font-size: 1.5rem;    
+    font-size: 1.7rem;    
 
     
   }
@@ -351,3 +393,97 @@ i{
   }
   
 
+/*FORMULARIO*/
+
+
+.donde-estamos h2{
+  text-align: center;
+  padding: 100px 60px 15px;
+  font-weight: 600;
+  color: #bf3030;
+ 
+}
+
+.contenedor-formulario h2{
+  text-align: center;
+  padding: 100px 60px 15px;
+  font-weight: 600;
+  color: #bf3030;
+ 
+}
+
+
+
+
+
+
+.redes-sociales{
+    background-color: #bf3030;
+    color: white;
+    text-align: right;
+    justify-content: right;
+    padding: 10px;
+}
+
+.redes-sociales a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.contenedor-contacto {
+  display: flex;
+  margin: 0px 10px 10px;
+}
+
+form {
+  width: 300px;
+  padding: 16px;
+  border-radius: 0px;
+  margin: auto;
+  background-color: #ccc;
+}
+
+form label {
+  width: 72px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 180px;
+  padding: 3px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 32px;
+  border: 1px solid rgb(160, 5, 5);
+  border-radius: 5px;
+  display: block;
+  color: #fff;
+  background-color: rgb(160, 5, 5);
+}
+
+form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  /*resize: vertical | horizontal | none | both*/
+  resize: none;
+  display: block;
+}

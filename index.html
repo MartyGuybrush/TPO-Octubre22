@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viviendas Salvador</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/08ea0c4c9e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilo_principal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/08ea0c4c9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <link rel="stylesheet" href="css/estilo_principal.css" />
+  </head>
 
-</head>
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img class="header-logo" src="imagenes/logo.png" />
+      </a>
+      <nav id="navbar">
+        <div><a href="#modelos">Nuestros modelos</a></div>
+        <div><a href="#nosotros">Nosotros</a></div>
+        <div><a href="#donde-estamos">Donde estamos</a></div>
+        <div><a href="#contacto">Contacto</a></div>
+      </nav>
+    </header>
 
-
-<body>
-
-    <div class="contenedor"></div>
-
-        <header class="header">
-           <h1 id="logo"><a href="index.html">Viviendas Salvador</a></h1>
-            <nav id="navbar">
-              <ul>
-                    <li><a href="index.html#modelos">Nuestros modelos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="index.html#contacto">Contacto</a></li>
-                    <li><a href="https://www.facebook.com/Viviendas-Salvador-101417352369532" target="_blank">Facebook</a>
-                    <li><a href="https://www.instagram.com/viviendas.salvador/"target="_blank">Instagram</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main class="banner">
-            <div class="banner-fondo"></div>
-            <div class="banner-texto">
-                <span class="texto1">
-                    <h2>QUE NO SE QUEDE EN TU IMAGINACIÓN</h2>
-                    <br>
-                    <h3>HACELO REALIDAD CON NOSOTROS</h3>
-                </span>
-                <!-- <span class="texto2">
+    <main class="banner">
+      <div class="banner-fondo"></div>
+      <div class="banner-texto">
+        <span class="texto1">
+          <h2>QUE NO SE QUEDE EN TU IMAGINACIÓN</h2>
+          <br />
+          <h3>HACELO REALIDAD CON NOSOTROS</h3>
+        </span>
+        <!-- <span class="texto2">
                     <h2>NO EJECUTAMOS OBRAS</h2>
                     <br>
                     <h3>MATERIALIZAMOS SUEÑOS</h3>
@@ -49,114 +50,290 @@
                     <br>
                     <h3>TU HOGAR SE ADAPTA A VOS</h3>
                 </span> -->
-            </div>
-     
-        </main>
-        
-        <div class="modelos-titulo"><h2>NUESTROS MODELOS</h2></div>
+      </div>
+    </main>
 
-        <section class="modelos">
-            <br>
-        
-            <div class="modelo-ficha">            
-                <div class="modelo-imagen">
-                    <img src="imagenes/modelo29_cementicia.jpg" alt="modelo29">
-                </div>
-                <div class="modelo-descripcion">
-                    <h3>MODELO 29m²</h3>
-                    <p>Hermosa casa de 1 dormitorio, cocina comedor, estudio y galeria, con baño totalmente instalado. </p>
-                </div>
-                <div class="boton-modelos">
-                    <a href="modelo_29.html">VER MAS</a> 
-                </div>
-            </div>
-            
- 
-            <div class="modelo-ficha">
-                <div class="modelo-imagen">
-                    <img src="imagenes/modelo47_cementicia.jpg" alt="modelo47">
-                </div>
-                <div class="modelo-descripcion">
-                    <h3>MODELO 47m²</h3>
-                    <p>Vivienda de 2 dormitorios, amplia cocina comedor, baño totalmente instalado y galería/cochera. </p>
-                </div>
-                <div class="boton-modelos"> 
-                    <a href="modelo_47.html">VER MAS</a> 
-                </div>
-            </div>
+    <div id="modelos"></div>
+    <div class="modelos-titulo"><h2>NUESTROS MODELOS</h2></div>
 
-            <div class="modelo-ficha">
-                <div class="modelo-imagen">
-                    <img src="imagenes/modelo81_cementicia.jpg" alt="modelo81">
-                </div>
-                <div class="modelo-descripcion">
-                    <h3>MODELO 81m²</h3>
-                    <p>Amplia vivienda con 3 dormitorios (1 en suite con vestidor), 2 baños, cocina comedor, living y cochera/galeria cubierta. </p>
-                </div>
-                <div class="boton-modelos">
-                    <a href="modelo_81.html">VER MAS</a> 
-                </div>
-            </div>
-        </section>
+    <section class="modelos">
+      <br />
 
-    <br>
-
-        <div class="nosotros">
-            <div class="nosotros-imagen"><img src="/imagenes/nosotros.jpg" alt=""></div>
-            <div class="nosotros-texto">
-                <h2>SOBRE NOSOTROS</h2>
-                <br>
-                <h3>CONSTRUYENDO LAS BASES DE TU FUTURO</h3>
-                <p>Somos una empresa dedicada a la fabricación e instalación de viviendas prefabricadas en todo el país.
-                Ofrecemos un producto de calidad, que brinda confort y bienestar a todos nuestros clientes, para que puedan cumplir el sueño de tener su casa propia. Nuestra empresa se destaca por la seriedad, compromiso, respeto, pasión y el excelente trabajo de equipo que realizamos.
-                Ofrecemos diferentes modelos de viviendas, para que elijas la que mejor se adapte al proyecto que estás desarrollando y soñando. 
-                <br>
-                ¿Qué estás esperando? ¡Empezá a fabricar tu casa propia!                  
-                </p> 
-            </div>            
+      <div class="modelo-ficha">
+        <div class="modelo-imagen">
+          <img src="imagenes/modelo29_cementicia.jpg" alt="modelo29" />
         </div>
-            
-        <div class="elegirnos">
-            <div class="elegirnos-texto">
-                <h2>¿POR QUÉ ELEGIRNOS?</h2>
-                <ul>
-                    <li><i class="fa-solid fa-house"></i> Contamos con una amplia variedad de modelos de viviendas.</li>
-                    <li><i class="fa-solid fa-house"></i> Estamos comprometidos en brindarte calidad, confort y bienestar.</li>
-                    <li><i class="fa-solid fa-house"></i> Hacemos realidad la casa de tus sueños, adaptándonos a tus necesidades.</li>
-                    <li><i class="fa-solid fa-house"></i> Contamos con un equipo de profesionales especializados en la construcción.</li>
-                    <li><i class="fa-solid fa-house"></i> Somos avalados por la excelencia de nuestros proveedores y la confianza de los clientes.</li>
-                </ul>
-            </div>            
+        <div class="modelo-descripcion">
+          <h3>MODELO 29m²</h3>
+          <p>
+            Hermosa casa de 1 dormitorio, cocina comedor, estudio y galeria, con
+            baño totalmente instalado.
+          </p>
         </div>
-            
+        <div class="boton-modelos">
+          <a href="Modelo_29m2.html">VER MAS</a>
+        </div>
+      </div>
 
-    <br>
-    <br>
-    <br>
-        <footer class="footer">
-            <H2>Y ACÁ IRÍA EL FOOTER</H2>
+      <div class="modelo-ficha">
+        <div class="modelo-imagen">
+          <img src="imagenes/modelo47_cementicia.jpg" alt="modelo47" />
+        </div>
+        <div class="modelo-descripcion">
+          <h3>MODELO 47m²</h3>
+          <p>
+            Vivienda de 2 dormitorios, amplia cocina comedor, baño totalmente
+            instalado y galería/cochera.
+          </p>
+        </div>
+        <div class="boton-modelos">
+          <a href="modelo_47.html">VER MAS</a>
+        </div>
+      </div>
 
-            <div class="contacto">
-                    <H2>ACÁ SE PODRÍA ARMAR EL FORMULARIO</H2>
-                    <form>
-                        <label for="nombre">NOMBRE:</label><br>
-                        <input type="text" id="nombre" name="nombre"><br>
-                        <label for="telefono">TELÉFONO:</label><br>
-                        <input type="number" id="numerotelefono" name="numerotelefono"><br>
-                        <label for="nombre">EMAIL:</label><br>
-                        <input type="email" id="email" name="email"><br>
-                        <label for="ciudad">CIUDAD:</label><br>
-                        <input type="text" id="ciudad" name="ciudad"><br>
-                        <label for="mensaje">MENSAJE:</label><br>
-                        <input type="text" id="mensaje" name="mensaje"><br>
-                    </form> 
-              
-            </div>
-        </footer>
+      <div class="modelo-ficha">
+        <div class="modelo-imagen">
+          <img src="imagenes/modelo81_cementicia.jpg" alt="modelo81" />
+        </div>
+        <div class="modelo-descripcion">
+          <h3>MODELO 81m²</h3>
+          <p>
+            Amplia vivienda con 3 dormitorios (1 en suite con vestidor), 2
+            baños, cocina comedor, living y cochera/galeria cubierta.
+          </p>
+        </div>
+        <div class="boton-modelos">
+          <a href="modelo_81.html">VER MAS</a>
+        </div>
+      </div>
+    </section>
 
+    <br />
+    <div id="nosotros"></div>
+
+    <div class="nosotros">
+      <div class="nosotros-imagen">
+        <img src="/imagenes/nosotros.jpg" alt="" />
+      </div>
+      <div class="nosotros-texto">
+        <h2>SOBRE NOSOTROS</h2>
+        <br />
+        <h3>CONSTRUYENDO LAS BASES DE TU FUTURO</h3>
+        <p>
+          Somos una empresa dedicada a la fabricación e instalación de viviendas
+          prefabricadas en todo el país. Ofrecemos un producto de calidad, que
+          brinda confort y bienestar a todos nuestros clientes, para que puedan
+          cumplir el sueño de tener su casa propia. Nuestra empresa se destaca
+          por la seriedad, compromiso, respeto, pasión y el excelente trabajo de
+          equipo que realizamos. Ofrecemos diferentes modelos de viviendas, para
+          que elijas la que mejor se adapte al proyecto que estás desarrollando
+          y soñando.
+          <br />
+          ¿Qué estás esperando? ¡Empezá a fabricar tu casa propia!
+        </p>
+      </div>
     </div>
-</body>
 
+    <div class="elegirnos">
+      <div class="elegirnos-texto">
+        <h2>¿POR QUÉ ELEGIRNOS?</h2>
+        <ul>
+          <li>
+            <i class="fa-solid fa-house"></i> Contamos con una amplia variedad
+            de modelos de viviendas.
+          </li>
+          <li>
+            <i class="fa-solid fa-house"></i> Estamos comprometidos en brindarte
+            calidad, confort y bienestar.
+          </li>
+          <li>
+            <i class="fa-solid fa-house"></i> Hacemos realidad la casa de tus
+            sueños, adaptándonos a tus necesidades.
+          </li>
+          <li>
+            <i class="fa-solid fa-house"></i> Contamos con un equipo de
+            profesionales especializados en la construcción.
+          </li>
+          <li>
+            <i class="fa-solid fa-house"></i> Somos avalados por la excelencia
+            de nuestros proveedores y la confianza de los clientes.
+          </li>
+        </ul>
+      </div>
+    </div>
 
+    <br />
+    <br />
+    <br />
 
+    <div class="donde-estamos" id="donde-estamos">
+      <h2>Donde estamos</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210246.5709361443!2d-58.75487851171561!3d-34.57626858090552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9501b0175cb1%3A0xf64125f18c769182!2sViviendas%20Salvador!5e0!3m2!1ses!2sar!4v1665588230870!5m2!1ses!2sar"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+
+    <footer class="footer">
+      <div class="contenedor-formulario">
+        <h2>Contactanos</h2>
+        <form action="#" id="contacto">
+          <div class="input-container">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Escribí tu nombre" />
+          </div>
+
+          <div class="input-container">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" placeholder="Apellido" />
+          </div>
+
+          <div class="input-container">
+            <label for="telefono">Teléfono</label>
+            <input
+              type="tel"
+              id="telefono"
+              placeholder="Telefono"
+              pattern="[0-9]"
+            />
+          </div>
+
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" />
+          </div>
+
+          <div class="input-container">
+            <label for="provincia">Provincia</label>
+            <input type="text" id="provincia" placeholder="Provincia" />
+          </div>
+
+          <div class="input-container double-col">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              for="mensaje"
+              placeholder="Dejanos tu consulta"
+              id="mensaje"
+              maxlength="300"
+            ></textarea>
+          </div>
+
+          <div class="input-container double-col centered">
+            <input
+              type="submit"
+              name="enviar"
+              id="submitBtn"
+              value="ENVIAR CONSULTA"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="redes-sociales">
+        <i class="fa fa-mail-forward" aria-hidden="true"></i>
+        ventas@viviendassalvador.com.ar
+
+        <i class="fa fa-whatsapp" aria-hidden="true"></i> 11-3127-2272
+
+        <a
+          href="https://www.facebook.com/Viviendas-Salvador-101417352369532"
+          target="_blank"
+        >
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          Facebook
+        </a>
+
+        <a href="https://www.instagram.com/viviendas.salvador/" target="_blank">
+          Instagram
+        </a>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    const validate = new JustValidate("#contacto", {
+      errorFieldCssClass: "is-invalid",
+      errorFieldStyle: {
+        border: "1px solid red",
+      },
+      errorLabelCssClass: "is-label-invalid",
+      errorLabelStyle: {
+        color: "red",
+        textDecoration: "underlined",
+      },
+      focusInvalidField: true,
+      lockForm: true,
+      tooltip: {
+        position: "top",
+      },
+    });
+    validate
+      .addField("#nombre", [
+        {
+          rule: "required",
+          errorMessage: "Nombre es requerido",
+        },
+        {
+          rule: "minLength",
+          value: 3,
+        },
+        {
+          rule: "maxLength",
+          value: 30,
+        },
+      ])
+      .addField("#apellido", [
+        {
+          rule: "required",
+          errorMessage: "Apellido es requerido",
+        },
+        {
+          rule: "minLength",
+          value: 3,
+        },
+        {
+          rule: "maxLength",
+          value: 30,
+        },
+      ])
+      .addField("#email", [
+        {
+          rule: "required",
+          errorMessage: "Email es requerido",
+        },
+        {
+          rule: "email",
+          errorMessage: "Email inválido!",
+        },
+      ])
+      .onSuccess((event) => {
+        const body = {};
+        const elements = event.target.elements;
+
+        for (let i = 0; i < elements.length; i++) {
+          const input = elements[i];
+          if (input.id === "submitBtn") {
+            continue;
+          }
+          body[input.id] = input.value;
+        }
+
+        fetch("https://jsonplaceholder.typicode.com/posts", {
+          method: "POST",
+          body: JSON.stringify(body),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8",
+          },
+        })
+          .then((response) => response.json())
+          .then((json) => alert("Su consulta fue recibida con éxito!."));
+      });
+  </script>
 </html>
