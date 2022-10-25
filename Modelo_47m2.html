@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MODELO DE CASAS</title>
-    <link rel="stylesheet" href="cuerpo-clickcasas.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo 47m2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/b75777cf68.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <link rel="stylesheet" href="css/estilo_principal.css" />
+    <link rel="stylesheet" href="css/cuerpo-clickcasas.css" />
+  </head>
 
-</head>
 <body>
-    <div class="contenedor">
-        <header class="header">
-            <h2>Encabezado</h2>
-            logo
-            y link a secciones de la pagina principal
 
-        </header>
+    <header class="header">
+        <a href="index.html">
+          <img class="header-logo" src="imagenes/logo.png" />
+        </a>
+        <nav id="navbar">
+          <div><a href="#modelos">Nuestros modelos</a></div>
+          <div><a href="#nosotros">Nosotros</a></div>
+          <div><a href="#donde-estamos">Donde estamos</a></div>
+          <div><a href="#contacto">Contacto</a></div>
+        </nav>
+      </header>
+
+    <div class="contenedor-modelos">
+       
         <!-- ..................CARRUSEL..................................................... -->
         <div class="carrusel"> 
 
@@ -170,24 +183,161 @@
         
         <!-- .........FOOTER........................................................ -->
 
-        <footer class="footer" id="footer">
-            <h3>FOOTER</h3>
-            un mapa
-            formulario
-            contacto
-            r eveniet nostrum facere? Assumenda, cumque corporis! Velit veniam perferendis voluptas sunt sed aliquid odit fugit tempora ducimus? Ad nisi nulla maiores obcaecati ipsam velit consequatur esse architecto.
-            Quos autem minus deleniti officia impedit est maxime cupiditate doloremque id iusto. Qui laborum, molestias quos repudiandae magnam eligendi nemo in dolorum fuga pariatur necessitatibus recusandae facere ab, harum optio!
-            Iusto eum iure quae vitae aliquam? Fuga veniam sint qui doloremque laudantium sit obcaecati eius tempore reiciendis provident neque, repellat dolorem vel consequatur cumque? Illum provident sed iste nam pariatur.
-            Aperiam asperiores animi odit numquam possimus incidunt reprehenderit totam nobis debitis quidem atque illum, adipisci fugit mollitia. Dignissimos sapiente corporis rem consequuntur? Earum, assumenda! Nemo magni officiis vel pariatur blanditiis.
-            Ducimus, minima dolor enim quis maiores eaque. Sequi consectetur repellat animi. Reiciendis exercitationem itaque sint eum impedit. Maiores accusantium ratione facilis quae voluptates, cumque fugit laboriosam. Animi amet fuga sequi?
-            Illum modi illo optio qui, cum ipsam iusto facere? Labore, rerum sequi autem obcaecati sit nulla corporis, dolores quae repellat nihil modi esse totam nesciunt repellendus nam, ducimus doloribus! Commodi.
-            Recusandae molestias alias quae placeat iure atque quas dicta labore laborum assumenda rerum quaerat, ea saepe quo autem sunt, debitis, eaque deleniti vel sapiente voluptatem laboriosam nisi tempore impedit. Tempora.
-            Placeat molestiae velit explicabo magni fugiat minima ab in, quisquam, quo dolorem voluptas omnis laborum ad suscipit magnam earum vitae nam esse? Dolorem soluta ipsam fugit inventore? Iusto, unde vitae.
-            Voluptate quo laboriosam eligendi officiis animi suscipit ullam illo blanditiis error, sint corporis consectetur fugit sapiente minima beatae perspiciatis placeat illum nostrum neque a et eum assumenda voluptas. Quos, enim?
-
-        </footer>
-
-    </div>
-
-</body>
-</html>
+        <footer class="footer">
+            <div class="contenedor-formulario">
+              <h2>Contactanos</h2>
+              <form action="#" id="contacto">
+                <div class="input-container">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" placeholder="Escribí tu nombre" />
+                </div>
+      
+                <div class="input-container">
+                  <label for="apellido">Apellido</label>
+                  <input type="text" id="apellido" placeholder="Apellido" />
+                </div>
+      
+                <div class="input-container">
+                  <label for="telefono">Teléfono</label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    placeholder="Telefono"
+                    pattern="[0-9]"
+                  />
+                </div>
+      
+                <div class="input-container">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Email" />
+                </div>
+      
+                <div class="input-container">
+                  <label for="provincia">Provincia</label>
+                  <input type="text" id="provincia" placeholder="Provincia" />
+                </div>
+      
+                <div class="input-container double-col">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea
+                    for="mensaje"
+                    placeholder="Dejanos tu consulta"
+                    id="mensaje"
+                    maxlength="300"
+                  ></textarea>
+                </div>
+      
+                <div class="input-container double-col centered">
+                  <input
+                    type="submit"
+                    name="enviar"
+                    id="submitBtn"
+                    value="ENVIAR CONSULTA"
+                  />
+                </div>
+              </form>
+            </div>
+      
+            <div class="redes-sociales">
+              <i class="fa fa-mail-forward" aria-hidden="true"></i>
+              ventas@viviendassalvador.com.ar
+      
+              <i class="fa fa-whatsapp" aria-hidden="true"></i> 11-3127-2272
+      
+              <a
+                href="https://www.facebook.com/Viviendas-Salvador-101417352369532"
+                target="_blank"
+              >
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                Facebook
+              </a>
+      
+              <a href="https://www.instagram.com/viviendas.salvador/" target="_blank">
+                Instagram
+              </a>
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </div>
+          </footer>
+        </body>
+      
+        <script>
+          const validate = new JustValidate("#contacto", {
+            errorFieldCssClass: "is-invalid",
+            errorFieldStyle: {
+              border: "1px solid red",
+            },
+            errorLabelCssClass: "is-label-invalid",
+            errorLabelStyle: {
+              color: "red",
+              textDecoration: "underlined",
+            },
+            focusInvalidField: true,
+            lockForm: true,
+            tooltip: {
+              position: "top",
+            },
+          });
+          validate
+            .addField("#nombre", [
+              {
+                rule: "required",
+                errorMessage: "Nombre es requerido",
+              },
+              {
+                rule: "minLength",
+                value: 3,
+              },
+              {
+                rule: "maxLength",
+                value: 30,
+              },
+            ])
+            .addField("#apellido", [
+              {
+                rule: "required",
+                errorMessage: "Apellido es requerido",
+              },
+              {
+                rule: "minLength",
+                value: 3,
+              },
+              {
+                rule: "maxLength",
+                value: 30,
+              },
+            ])
+            .addField("#email", [
+              {
+                rule: "required",
+                errorMessage: "Email es requerido",
+              },
+              {
+                rule: "email",
+                errorMessage: "Email inválido!",
+              },
+            ])
+            .onSuccess((event) => {
+              const body = {};
+              const elements = event.target.elements;
+      
+              for (let i = 0; i < elements.length; i++) {
+                const input = elements[i];
+                if (input.id === "submitBtn") {
+                  continue;
+                }
+                body[input.id] = input.value;
+              }
+      
+              fetch("https://jsonplaceholder.typicode.com/posts", {
+                method: "POST",
+                body: JSON.stringify(body),
+                headers: {
+                  "Content-type": "application/json; charset=UTF-8",
+                },
+              })
+                .then((response) => response.json())
+                .then((json) => alert("Su consulta fue recibida con éxito!."));
+            });
+        </script>
+      </html>
+      
