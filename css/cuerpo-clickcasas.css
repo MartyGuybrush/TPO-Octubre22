@@ -1,7 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Color y letra general para el cuerpo */
+body {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
 
 
-/* Estructura genera */
-.contenedor-modelos {
+
+/* ESTILO HEADER */
+.header {
+    position: sticky;
+    height: 40px;
+    z-index: 200;
+    top: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header .header-logo {
+    height: 100%;
+    
+  }
+  
+  .header #navbar {
+    display: flex;
+    gap: 10px;
+    
+  }
+  
+  .header #navbar div {
+    padding: 10px 25px;
+    cursor: pointer;
+    
+  }
+  .header #navbar div:hover {
+    background-color: #bf3030;
+    color: white;
+    border-radius: 8px;
+    
+  }
+  
+  .header #navbar div:hover a {
+    color: white;
+  }
+  .header #navbar div a {
+    text-decoration: none;
+    font-weight: bold;
+  
+  
+  }
+  
+/* Estructura general */
+.contenedor {
     width: 90%;
     max-width: 2000px;
     margin: 20px auto;
@@ -18,28 +72,11 @@
 
 }
 
-.contenedor-modelos h2, h5 {
-        font-family: Poppins;
-        letter-spacing: 1px;
-        font-size: 1.8rem;
-        text-align: center;
-}
-
-.contenedor-modelos h3 {
-    font-family: Poppins;
-    letter-spacing: 1px;
-    font-size: 1.3rem;
+h5,h3 {
     text-align: center;
 }
 
-.contenedor-modelos p {
-    font-family: Poppins;
-    
-    font-size: 1rem;    
-}
-
-
-.desc-1 {
+.contenedor .desc-1 {
     grid-area: desc-1;
     width: 25rem;
     height: 15rem;
@@ -47,7 +84,7 @@
     list-style-position: inside;
 
 }
-.desc-2 {
+.contenedor .desc-2 {
     grid-area: desc-2;
     width: 25rem;
     height: 15rem;
@@ -55,7 +92,7 @@
     list-style-position: inside;
 
 }
- .desc-3 {
+.contenedor .desc-3 {
     grid-area: desc-3;
     width: 25rem;
     height: 15rem;
@@ -63,21 +100,21 @@
     list-style-position: inside;
     
 }
-.desc-4 {
+.contenedor .desc-4 {
     grid-area: desc-4;
     width: 25rem;
     height: 15rem;
     background-color: white;
     list-style-position: inside;
 }
- .desc-5 {
+.contenedor .desc-5 {
     grid-area: desc-5;
     width: 25rem;
     height: 15rem;
     background-color: white;
     list-style-position: inside;
 }
-.especifico {
+.contenedor .especifico {
     grid-area: especifico;
     background-color: white;
     width: 26rem;
@@ -87,7 +124,7 @@
 
 }
 
-.financiacion {
+.contenedor .financiacion {
     grid-area: financiacion;
     color: black ;
     background-color: beige;
@@ -101,14 +138,22 @@
     
 
 }
-.contenedor-modelos .opciones {
+.contenedor .opciones {
     display: inline-block;
+}
+.contenedor .footer {
+    background: #12203E;
+    color: #fff;
+    grid-area: footer;
+    width: 100%;
+    height: 25rem;
+
 }
 
 
 
 /* ARMADO DEL CARRUSEL ....................... */
-.contenedor-modelos .carrusel {
+.contenedor .carrusel {
     grid-area: carrusel;
     padding: 1rem;
     background-color: white;
@@ -188,7 +233,7 @@ ul.slider li:target{
     border-radius: 50px; 
     box-shadow: 0px 0px 7px black ;
 }
-/* Estilo de letra de el sector/div de financiacion */
+/* Estilo de letra del sector/div de financiacion */
 .PRECIO {
     font-weight: bold;
     color: black;
@@ -200,7 +245,7 @@ ul.slider li:target{
 /* Medias query */
 
 @media screen and (max-width: 768px){
-    .contenedor-modelos {
+    .contenedor {
         grid-template-areas: "header header header "
                             "carrusel carrusel financiacion "
                             "descripcion descripcion descripcion"
