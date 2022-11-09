@@ -37,6 +37,7 @@ a{
 }
 
 /* ESTILO HEADER */
+/* ESTILO HEADER */
 .header {
   position: sticky;
   height: 40px;
@@ -44,40 +45,33 @@ a{
   top: 0px;
   background-color: white;
   display: flex;
+  border-bottom: 1px solid #bf3030;
   justify-content: space-between;
 }
 
 .header .header-logo {
   height: 100%;
-  
 }
 
 .header #navbar {
   display: flex;
   gap: 10px;
-  
 }
 
 .header #navbar div {
-  padding: 10px 25px;
+  padding: 10px 5px;
   cursor: pointer;
-  
 }
 .header #navbar div:hover {
   background-color: #bf3030;
   color: white;
-  border-radius: 8px;
-  
 }
-
 .header #navbar div:hover a {
   color: white;
 }
 .header #navbar div a {
   text-decoration: none;
   font-weight: bold;
-
-
 }
 
 .contenedor{
@@ -395,70 +389,73 @@ i{
 
 /*FORMULARIO*/
 
+.redes-sociales {
+  background-color: #bf3030;
+  color: white;
+  text-align: right;
+  justify-content: right;
+  padding: 10px;
+}
 
-.donde-estamos h2{
+.redes-sociales a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.donde-estamos {
+  width: 100%;
   text-align: center;
-  padding: 100px 60px 15px;
-  font-weight: 600;
-  color: #bf3030;
- 
 }
 
-.contenedor-formulario h2{
+.contenedor-formulario {
+  width: 100%;
   text-align: center;
-  padding: 100px 60px 15px;
-  font-weight: 600;
+}
+
+.donde-estamos h2,
+.contenedor-formulario h2 {
   color: #bf3030;
- 
-}
-
-
-
-
-
-
-.redes-sociales{
-    background-color: #bf3030;
-    color: white;
-    text-align: right;
-    justify-content: right;
-    padding: 10px;
-}
-
-.redes-sociales a{
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-}
-
-.contenedor-contacto {
-  display: flex;
-  margin: 0px 10px 10px;
 }
 
 form {
-  width: 300px;
+  width: 700px;
   padding: 16px;
   border-radius: 0px;
   margin: auto;
   background-color: #ccc;
+  font-family: Poppins;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  align-items: baseline;
+}
+
+form .input-container.double-col{
+  grid-column: span 2;
+}
+
+form .input-container.centered{
+  text-align: center;
 }
 
 form label {
-  width: 72px;
+  width: 73px;
   font-weight: bold;
   display: inline-block;
+  font-family: Poppins;
 }
 
 form input[type="text"],
+form input[type="tel"],
 form input[type="email"] {
-  width: 180px;
+  width: 75%;
   padding: 3px 10px;
   border: 1px solid #f6f6f6;
   border-radius: 3px;
   background-color: #f6f6f6;
-  margin: 8px 0;
-  display: inline-block;
+  margin: 8px 0;;
+  font-family: Poppins;
 }
 
 form input[type="submit"] {
@@ -486,4 +483,5 @@ textarea {
   /*resize: vertical | horizontal | none | both*/
   resize: none;
   display: block;
+  font-family: Poppins;
 }
