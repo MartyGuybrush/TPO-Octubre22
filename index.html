@@ -24,6 +24,9 @@
       <a href="index.html">
         <img class="header-logo" src="imagenes/logo.png" />
       </a>
+      <div class="menu-icon" id="menu-btn">
+        <i class="fa-solid fa-house"></i>
+      </div>
       <nav id="navbar">
         <div><a href="#modelos">Nuestros modelos</a></div>
         <div><a href="#nosotros">Nosotros</a></div>
@@ -32,7 +35,7 @@
       </nav>
     </header>
 
-    <main class="banner">
+    <div class="banner">
       <div class="banner-fondo"></div>
       <div class="banner-texto">
         <span class="texto1">
@@ -40,71 +43,66 @@
           <br />
           <h3>HACELO REALIDAD CON NOSOTROS</h3>
         </span>
-    
       </div>
-    </main>
+    </div>
 
-    <div id="modelos"></div>
-    <div class="modelos-titulo"><h2>NUESTROS MODELOS</h2></div>
+    <section id="modelos">
+      <div class="modelos-titulo"><h2>NUESTROS MODELOS</h2></div>
 
-    <section class="modelos">
-      <br />
-
-      <div class="modelo-ficha">
-        <div class="modelo-imagen">
-          <img src="imagenes/modelo29_cementicia.jpg" alt="modelo29" />
+      <div class="contenedor-fichas">
+        <div class="modelo-ficha">
+          <div class="modelo-imagen">
+            <img src="imagenes/modelo29_cementicia.jpg" alt="modelo29" />
+          </div>
+          <div class="modelo-descripcion">
+            <h3>MODELO 29m²</h3>
+            <p>
+              Hermosa casa de 1 dormitorio, cocina comedor, estudio y galeria, con
+              baño totalmente instalado.
+            </p>
+          </div>
+          <div class="boton-modelos">
+            <a href="Modelo 29m2.html">VER MAS</a>
+          </div>
         </div>
-        <div class="modelo-descripcion">
-          <h3>MODELO 29m²</h3>
-          <p>
-            Hermosa casa de 1 dormitorio, cocina comedor, estudio y galeria, con
-            baño totalmente instalado.
-          </p>
+  
+        <div class="modelo-ficha">
+          <div class="modelo-imagen">
+            <img src="imagenes/modelo47_cementicia.jpg" alt="modelo47" />
+          </div>
+          <div class="modelo-descripcion">
+            <h3>MODELO 47m²</h3>
+            <p>
+              Vivienda de 2 dormitorios, amplia cocina comedor, baño totalmente
+              instalado y galería/cochera.
+            </p>
+          </div>
+          <div class="boton-modelos">
+            <a href="Modelo 47m2.html">VER MAS</a>
+          </div>
         </div>
-        <div class="boton-modelos">
-          <a href="Modelo 29m2.html">VER MAS</a>
-        </div>
-      </div>
-
-      <div class="modelo-ficha">
-        <div class="modelo-imagen">
-          <img src="imagenes/modelo47_cementicia.jpg" alt="modelo47" />
-        </div>
-        <div class="modelo-descripcion">
-          <h3>MODELO 47m²</h3>
-          <p>
-            Vivienda de 2 dormitorios, amplia cocina comedor, baño totalmente
-            instalado y galería/cochera.
-          </p>
-        </div>
-        <div class="boton-modelos">
-          <a href="Modelo 47m2.html">VER MAS</a>
-        </div>
-      </div>
-
-      <div class="modelo-ficha">
-        <div class="modelo-imagen">
-          <img src="imagenes/modelo81_cementicia.jpg" alt="modelo81" />
-        </div>
-        <div class="modelo-descripcion">
-          <h3>MODELO 81m²</h3>
-          <p>
-            Amplia vivienda con 3 dormitorios (1 en suite con vestidor), 2
-            baños, cocina comedor, living y cochera/galeria cubierta.
-          </p>
-        </div>
-        <div class="boton-modelos">
-          <a href="Modelo 81m2.html">VER MAS</a>
+  
+        <div class="modelo-ficha">
+          <div class="modelo-imagen">
+            <img src="imagenes/modelo81_cementicia.jpg" alt="modelo81" />
+          </div>
+          <div class="modelo-descripcion">
+            <h3>MODELO 81m²</h3>
+            <p>
+              Amplia vivienda con 3 dormitorios (1 en suite con vestidor), 2
+              baños, cocina comedor, living y cochera/galeria cubierta.
+            </p>
+          </div>
+          <div class="boton-modelos">
+            <a href="Modelo 81m2.html">VER MAS</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <br />
-    <div id="nosotros"></div>
-
-    <div class="nosotros">
+    <section  id="nosotros">
       <div class="nosotros-imagen">
-        <img src="/imagenes/nosotros.jpg" alt="" />
+        <img src="imagenes/nosotros.jpg" alt="" />
       </div>
       <div class="nosotros-texto">
         <h2>SOBRE NOSOTROS</h2>
@@ -123,9 +121,9 @@
           ¿Qué estás esperando? ¡Empezá a fabricar tu casa propia!
         </p>
       </div>
-    </div>
+    </section>
 
-    <div class="elegirnos">
+    <section class="elegirnos">
       <div class="elegirnos-texto">
         <h2>¿POR QUÉ ELEGIRNOS?</h2>
         <ul>
@@ -151,13 +149,9 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
 
-    <br />
-    <br />
-    <br />
-
-    <div class="donde-estamos" id="donde-estamos">
+    <div id="donde-estamos">
       <h2>Donde estamos</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210246.5709361443!2d-58.75487851171561!3d-34.57626858090552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9501b0175cb1%3A0xf64125f18c769182!2sViviendas%20Salvador!5e0!3m2!1ses!2sar!4v1665588230870!5m2!1ses!2sar"
@@ -247,6 +241,6 @@
       </div>
     </footer>
   </body>
-  
+
   <script src="js/form.js" type="application/javascript"></script>
 </html>
